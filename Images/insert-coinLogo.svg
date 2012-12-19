@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="insert-coinLogo.svg"
-   inkscape:export-filename="C:\development\cleanFacetracking\FaceTrackingUdpSender\Images\insert-coinLogo.png"
+   inkscape:export-filename="C:\development\github\FaceTrackingUdpSender\Images\insert-coinLogo.png"
    inkscape:export-xdpi="115.2"
    inkscape:export-ydpi="115.2">
   <defs
@@ -28,7 +28,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-70.714286"
+     inkscape:cx="-525"
      inkscape:cy="520"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -57,16 +57,16 @@
      transform="translate(0,-852.36218)">
     <path
        sodipodi:type="arc"
-       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="path2985"
        sodipodi:cx="288.57144"
        sodipodi:cy="422.36218"
        sodipodi:rx="177.14285"
        sodipodi:ry="175.71428"
-       d="m 148.90758,314.2749 c 60.18029,-76.51216 171.49568,-90.14521 248.6299,-30.45025 77.13422,59.69495 90.8781,170.11264 30.69782,246.62481 -37.80225,48.06113 -98.01554,73.25416 -159.09857,66.56629"
+       d="M 132.97355,338.37572 A 177.14285,175.71428 0 1 1 239.76946,591.27676"
        transform="matrix(0.56292081,0,0,0.56749741,-62.44287,712.67273)"
-       sodipodi:start="3.8041446"
-       sodipodi:end="7.963915"
+       sodipodi:start="3.6399368"
+       sodipodi:end="8.1330863"
        sodipodi:open="true" />
   </g>
 </svg>

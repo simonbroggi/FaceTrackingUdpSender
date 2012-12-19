@@ -45,7 +45,7 @@
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Images\Kinect.ico</ApplicationIcon>
+    <ApplicationIcon>insert-coinIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Kinect">
@@ -133,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\insert-coinLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="insert-coinIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
