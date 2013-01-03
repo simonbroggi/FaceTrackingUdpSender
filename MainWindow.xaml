@@ -40,7 +40,7 @@
             <CheckBox Name="renderRGBCheckBox" Content="Render RGB" DockPanel.Dock="Top" Checked="renderRGBCheckBox_Checked" Unchecked="renderRGBCheckBox_Unchecked" IsChecked="True" Foreground="{DynamicResource KinectPurpleBrush}"/>
             <CheckBox Name="renderWireCheckBox" Content="Render Wireframe" DockPanel.Dock="Top" Checked="renderWireCheckBox_Checked" Unchecked="renderWireCheckBox_Unchecked" IsChecked="True" Foreground="{DynamicResource KinectPurpleBrush}" Background="#FFF4F4F4"/>
             <Label Content="Destination" HorizontalAlignment="Left" DockPanel.Dock="Top" Foreground="{DynamicResource KinectPurpleBrush}" FontWeight="Bold" Margin="0,20,0,0"/>
-            <TextBox Name="ipTextBox" TextWrapping="NoWrap" Text="192.168.0.141" HorizontalAlignment="Left" DockPanel.Dock="Top" Width="100" ToolTip="IP Address" TextChanged="ipTextBox_TextChanged" Foreground="{DynamicResource KinectPurpleBrush}"/>
+            <TextBox Name="ipTextBox" TextWrapping="NoWrap" Text="192.168.0.125" HorizontalAlignment="Left" DockPanel.Dock="Top" Width="100" ToolTip="IP Address" TextChanged="ipTextBox_TextChanged" Foreground="{DynamicResource KinectPurpleBrush}"/>
             <TextBox Name="portTextBox" TextWrapping="NoWrap" Text="11001" HorizontalAlignment="Left" DockPanel.Dock="Top" Width="100" ToolTip="Port" TextChanged="portTextBox_TextChanged" Foreground="{DynamicResource KinectPurpleBrush}"/>
         </DockPanel>
         

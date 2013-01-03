@@ -371,6 +371,11 @@ namespace FaceTrackingUdpSender
             }
             public byte[] WriteFaceDataToBuffer()
             {
+                if (buffer == null)
+                {
+                    System.Diagnostics.Debug.WriteLine("BUFFER INITIALISED COS NULL");
+                    initByteBuffer();
+                }
                 tick++;
                 Array.Copy(System.BitConverter.GetBytes(tick), 0, buffer, 0, sizeof(ulong)); //write ticks (what a nonsense thing to do...)
                 Array.Copy(System.BitConverter.GetBytes((ushort)1), 0, buffer, sizeof(ulong), sizeof(ushort)); //write number of faces (only 1 at the moment)
@@ -465,14 +470,16 @@ hurra, dont need 43th vertex
                         this.shapePoints = frame.Get3DShape();
                         
                         byte[] buffer = WriteFaceDataToBuffer();
-                        System.Diagnostics.Debug.WriteLine("Should send {0}", buffer.Length);//1468
+                        //System.Diagnostics.Debug.WriteLine("Should send {0}", buffer.Length);//1468
+                        
                         //need to reduce by 444 bytes
                         //a point is 12. 85 points would result in 1020 bytes. 4 bytes remaining for face id...?
                         //currently 121 points. which ones can be leaft out?
                         //found 9 not needed. still 27 to much...
                         //header is useless. 434 bytes remaining after removing it
-                        //buffer = new byte[1024];//works fast, even if unknown send to ip..
-                        
+                        //byte[] buffer = buffer = new byte[1024];//works fast, even if unknown send to ip..
+                        //ushort thefaceid = 22;
+                        //Array.Copy(System.BitConverter.GetBytes(thefaceid), 0, buffer, 0, sizeof(ushort));
                         try
                         {
                             sending_socket.SendTo(buffer, sending_end_point); // is this blocking? need to start sending asynchronously?!?
